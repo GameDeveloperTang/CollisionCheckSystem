@@ -1,11 +1,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "UObject/ObjectMacros.h"
 #include "UObject/NoExportTypes.h"
 #include "Engine/HitResult.h"
 #include "Engine/EngineTypes.h"
 #include "Kismet/KismetSystemLibrary.h"
-#include "UObject/ObjectMacros.h"
+#include "InstancedStruct.h"
 #include "CollisionCheckSysTypes.generated.h"
 
 // Collision Check Pipline
@@ -63,8 +64,8 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Config")
 	FLinearColor HitResultColor = FLinearColor::Green;
 
-// 	UPROPERTY(EditDefaultsOnly, Category = "Config")
-// 	TArray<FInstancedStruct> CollisionParamsPrepares;
+	UPROPERTY(EditDefaultsOnly, Category = "Config")
+	TArray<FInstancedStruct> CollisionParamsPrepares;
 
 	virtual void Trace(UWorld* World, FHitResult& OutHit) {};
 

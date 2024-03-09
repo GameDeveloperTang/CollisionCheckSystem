@@ -28,6 +28,10 @@ public class CollisionCheckSystem : ModuleRules
 			new string[]
 			{
 				"Core",
+                "StructUtilsEngine",
+                "StructUtilsEditor",
+                "GameplayTags",
+                "StructUtils",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -41,7 +45,6 @@ public class CollisionCheckSystem : ModuleRules
 				"Slate",
 				"SlateCore",
                 "PhysicsCore",
-                "StructUtils",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

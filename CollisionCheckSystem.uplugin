@@ -18,12 +18,18 @@
 		{
 			"Name": "CollisionCheckSystem",
 			"Type": "Runtime",
-			"LoadingPhase": "PreLoadingScreen"
+			"LoadingPhase": "Default"
 		},
 		{
 			"Name": "CollisionCheckRuntimeLibrary",
 			"Type": "Runtime",
-			"LoadingPhase": "PreLoadingScreen"
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "StructUtils",
+			"Enabled": true
 		}
 	]
 }
